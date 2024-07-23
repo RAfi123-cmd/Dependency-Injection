@@ -4,7 +4,9 @@ import com.deviro.colours.services.BluePrinter;
 import com.deviro.colours.services.ColourPrinter;
 import com.deviro.colours.services.GreenPrinter;
 import com.deviro.colours.services.RedPrinter;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ColourPrinterlmpl implements ColourPrinter {
 
   private RedPrinter redPrinter;
@@ -16,6 +18,7 @@ public class ColourPrinterlmpl implements ColourPrinter {
   // this.bluePrinter = new EnglishBluePrinter();
   // this.greenPrinter = new EnglishGreenPrinter();
   // }
+
   public ColourPrinterlmpl(
       RedPrinter redPrinter, BluePrinter bluePrinter, GreenPrinter greenPrinter) {
     this.redPrinter = redPrinter;
